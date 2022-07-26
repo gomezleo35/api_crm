@@ -1,0 +1,28 @@
+{
+  "clientes": [
+    {
+      "nombre": "leonardo gomez",
+      "empresa": "goSolutions",
+      "email": "gomezleo35@gmail.com",
+      "telefono": "+543512587180",
+      "notas": "quiero pan",
+      "id": 1
+    },
+    {
+      "nombre": "Gabriela",
+      "empresa": "goSolutions",
+      "email": "gomezleo35@gmail.com",
+      "telefono": "+543512587180",
+      "notas": "",
+      "id": 2
+    },
+    {
+      "nombre": "Martina",
+      "empresa": "Miss Martina Juega",
+      "email": "martina@gmail.com",
+      "telefono": "+543512587180",
+      "notas": "A martina le gustaria comer una hamburguesa en la plazita",
+      "id": 4
+    }
+  ]
+}
