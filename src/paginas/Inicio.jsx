@@ -3,16 +3,16 @@ import Cliente from '../Components/Cliente'
 
 const Inicio = () => {
   const [clientes, setClientes] = useState([])
-  console.log(import.meta.env.VITE_API_URL)
+  
   useEffect(() => {
     const obtenerClientesAPI = async () => {
       try {
-        const url = import.meta.env.VITE_API_URL
+        const url ='http://localhost:4000/clientes'
         const respuesta = await fetch(url)
         const resultado = await respuesta.json()
         setClientes(resultado)
       } catch (error) {
-        console.log(error)
+        
       }
     
     }
@@ -23,7 +23,7 @@ const Inicio = () => {
     const confirmar = confirm("Desea eliminar el cliente?")
     if (confirmar) {
       try {
-        const url = import.meta.env.VITE_API_URL
+        const url = `http://localhost:4000/clientes/${id}`
         const respuesta = await fetch(url ,{
           method: 'DELETE'
         })

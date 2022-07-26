@@ -32,7 +32,7 @@ const navigate = useNavigate()
         try{
             let respuesta
             if (cliente.id) {
-                const url = `${import.meta.env.VITE_API_URL}/${cliente.id}`
+                const url = `http://localhost:4000/clientes/${cliente.id}`
                 respuesta = await fetch(url, {
                 method: 'PUT',
                 body: JSON.stringify(valores),
@@ -41,7 +41,7 @@ const navigate = useNavigate()
                 }
                 })
             } else {
-                const url = import.meta.env.VITE_API_URL
+                const url = 'http://localhost:4000/clientes'
                 respuesta = await fetch(url, {
                 method: 'POST',
                 body: JSON.stringify(valores),
