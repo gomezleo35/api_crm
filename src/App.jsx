@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import {BrowserRouter, Route, Routes} from 'react-router-dom'
+import {BrowserRouter, Route, Routes, Navigate} from 'react-router-dom'
 import Layout from './layout/Layout'
 import Inicio from './paginas/Inicio'
 import NuevoCliente from './paginas/NuevoCliente'
@@ -11,7 +11,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        
+        <Route path="/" element={ <Navigate to="/clientes"/>}/>
         <Route path="/clientes"element={<Layout/>}>
           <Route index element={<Inicio/>}/>
           <Route path="nuevo" element={<NuevoCliente/>}/>
