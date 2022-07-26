@@ -3,7 +3,7 @@ import Cliente from '../Components/Cliente'
 
 const Inicio = () => {
   const [clientes, setClientes] = useState([])
-  
+  console.log(import.meta.env.VITE_API_URL)
   useEffect(() => {
     const obtenerClientesAPI = async () => {
       try {
