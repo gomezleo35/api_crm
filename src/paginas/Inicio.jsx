@@ -12,7 +12,7 @@ const Inicio = () => {
         const resultado = await respuesta.json()
         setClientes(resultado)
       } catch (error) {
-        
+        console.log(error)
       }
     
     }
